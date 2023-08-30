@@ -22,7 +22,7 @@ def layer_norm_test(fs=4096, bs=4096, dtype=torch.float):
 
 loops = 10
 
-for dtype in [torch.float, torch.half]:
+for dtype in [torch.half]:
     start_time = time.time()
     for _ in range(loops):
         layer_norm_test(dtype=dtype)
