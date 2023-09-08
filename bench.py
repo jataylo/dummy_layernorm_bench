@@ -29,5 +29,5 @@ for dtype in [torch.half]:
     end_time = time.time()
     elapsed_time = end_time - start_time
     loops_per_sec = loops / elapsed_time
-    print(f"Loops per second {dtype}: {loops_per_sec}")
+    print(f"loops_per_second={loops_per_sec}")
 
